@@ -1,12 +1,12 @@
 {
-    "version": "0.9.3",  // Replace with the latest version
+    "version": "1.0.0", 
     "description": "VirusTotal Command Line Interface",
     "homepage": "https://github.com/VirusTotal/vt-cli",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/VirusTotal/vt-cli/releases/download/1.0.0/Windows64.zip",
-            "hash": "SHA256_HASH"  // Replace with the actual SHA256 hash of the file
+            "hash": "694273D1E34EB359FF966E71CFABED6F002D4C16614D20123DD53028D281D3B3 "  
         }
     },
     "bin": "vt.exe",
