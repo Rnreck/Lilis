@@ -1,0 +1,19 @@
+{
+    "version": "3.9.0",
+    "description": "Douyin PC Client",
+    "homepage": "https://www.douyin.com/",
+    "license": "Unknown",
+    "architecture": {
+        "32bit": {
+            "url": "https://www.douyin.com/download/pc/obj/douyin-pc-client/7044145585217083655/releases/11867354/3.9.0/win32-ia32/douyin-downloader-v3.9.0-win32-ia32-douyincold.exe",
+            "hash": F5AC9AD878FA3C29A661240C065A0CBDA6B73EA983D8A23919EF7FC7BDF5FFC2"
+        }
+    },
+    "bin": "douyin-downloader-v3.9.0-win32-ia32-douyincold.exe",
+    "shortcuts": [
+        [
+            "douyin-downloader-v3.9.0-win32-ia32-douyincold.exe",
+            "Douyin PC Client"
+        ]
+    ]
+}
