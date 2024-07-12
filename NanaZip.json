@@ -14,11 +14,11 @@
     "bin": [
         [
             "NanaZip.Console.exe",
-            "7z"
+            "nanazip"
         ],
         [
             "NanaZip.Modern.exe",
-            "7zG"
+            "nanazipg"
         ]
     ],
     "shortcuts": [
