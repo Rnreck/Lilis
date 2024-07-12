@@ -13,15 +13,15 @@
         }
     },
     "pre_install": [
-        "7z x \"$dir\\hooke007.mpv-lazy-20240406.exe\" -o\"$dir\"",
-        "Move-Item \"$dir\\mpv-lazy\\*\" \"$dir\" -Force",
+        "7z x \"$dir\\hooke007.mpv-lazy-20240406.exe\" -o\"$dir\" -y > $null 2>&1",
+        "Get-ChildItem \"$dir\\mpv-lazy\\*\" | ForEach-Object { Move-Item $_.FullName -Destination \"$dir\" -Force }",
         "Remove-Item \"$dir\\mpv-lazy\" -Recurse -Force",
         "Remove-Item \"$dir\\hooke007.mpv-lazy-20240406.exe\" -Force"
     ],
     "shortcuts": [
         [
             "mpv.exe",
-            "mpv-lazy"
+            "mpv"
         ]
     ],
     "persist": "portable_config",
