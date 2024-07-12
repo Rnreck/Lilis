@@ -12,6 +12,9 @@
             "hash": "48385C56659B8AA56FE2A372DA3C5277E3A7FD671AAF2F7AA66DCFCC58274B4E"
         }
     },
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\hooke007.mpv-lazy-20240406.exe\" -DestinationPath \"$dir\""
+    ],
     "extract_dir": "mpv-lazy",
     "shortcuts": [
         [
