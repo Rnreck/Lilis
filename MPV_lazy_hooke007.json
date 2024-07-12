@@ -21,7 +21,7 @@
     "shortcuts": [
         [
             "mpv.exe",
-            "mpv"
+            "mpv-lazy"
         ]
     ],
     "persist": "portable_config",
