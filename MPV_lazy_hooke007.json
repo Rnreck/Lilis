@@ -14,7 +14,7 @@
     },
     "pre_install": [
         "Expand-7zipArchive \"$dir\\hooke007.mpv-lazy-20240406.exe\" -DestinationPath \"$dir\\mpv-lazy\"",
-        "Move-Item \"$dir\\mpv-lazy\\*\" \"$dir\" -Force",
+        "Get-ChildItem \"$dir\\mpv-lazy\\*\" | Move-Item -Destination \"$dir\" -Force",
         "Remove-Item \"$dir\\mpv-lazy\" -Recurse -Force",
         "Remove-Item \"$dir\\hooke007.mpv-lazy-20240406.exe\" -Force"
     ],
