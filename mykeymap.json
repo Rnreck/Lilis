@@ -1,6 +1,6 @@
 {
     "version": "2.0-beta29",
-    "url": "https://github.com/xianyukang/MyKeymap/releases/download/MyKeymap-2.0-beta29.7z",
+    "url": "https://github.com/xianyukang/MyKeymap/releases/MyKeymap-2.0-beta29.7z",
     "hash": "0D7A627CD57BECA325450BE855E67E3EA07A1270EEB2126288D05A52094AF32E", 
     "bin": "MyKeymap.exe", 
     "shortcuts": [
