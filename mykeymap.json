@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/xianyukang/MyKeymap/releases/download/2.0-beta29/MyKeymap-2.0-beta29.7z",
-            "hash": "生成的hash值"
+            "hash": "0D7A627CD57BECA325450BE855E67E3EA07A1270EEB2126288D05A52094AF32E"
         }
     },
     "pre_install": [
