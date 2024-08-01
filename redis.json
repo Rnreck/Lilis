@@ -3,6 +3,14 @@
     "description": "In-memory data structure store, used as a database, cache and message broker",
     "homepage": "https://redis.io",
     "license": "BSD-3-Clause",
+    "notes": [
+        "Command line startup:",
+        "    cmd startup:           \"redis-server.exe redis.conf\"",
+        "    powershell startup:    \"./redis-server.exe redis.conf\"",
+        "",
+        "Can achieve automatic startup on boot. Please run it as an administrator and change RedisService.exe to the actual directory where it is stored.",
+        "    \"sc.exe create Redis binpath=C:\\$env:scoop\\Redis\\RedisService.exe start= auto\""
+    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/redis-windows/redis-windows/releases/download/7.4.0/Redis-7.4.0-Windows-x64-msys2-with-Service.zip",
