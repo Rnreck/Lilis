@@ -7,13 +7,11 @@
     "64bit": {
       "url": "https://github.com/arch1t3cht/Aegisub/releases/download/feature_11/Windows.MSVC.Release.wx.master.-.installer.zip",
       "extract_dir": "Aegisub",
-      "pre_install": [
-        "Expand-7zipArchive \"$dir\\Aegisub-9706-cibuilds-20caaabc0.exe\" \"$dir\\aegisub-installer.exe\""
-      ],
       "installer": {
-        "file": "aegisub-installer.exe",
-        "args": [
-          "/S"
+        "script": [
+          "Expand-7zipArchive \"$dir\\Windows.MSVC.Release.wx.master.-.installer.zip\" \"$dir\"",
+          "Rename-Item \"$dir\\Aegisub-9706-cibuilds-20caaabc0.exe\" \"$dir\\aegisub-installer.exe\"",
+          "Start-Process \"$dir\\aegisub-installer.exe\" -ArgumentList '/S' -Wait"
         ]
       },
       "hash": "E9BC292A700FBAD6CE14C4B268D3E49B43344CC94DE5C3BFCCDA8AD616225C28"
