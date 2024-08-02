@@ -1,0 +1,31 @@
+{
+  "version": "9706",
+  "description": "Aegisub is a free, cross-platform open source tool for creating and editing subtitles.",
+  "homepage": "http://www.aegisub.org/",
+  "license": "BSD-3-Clause",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/arch1t3cht/Aegisub/releases/download/feature_11/Windows.MSVC.Release.wx.master.-.installer.zip",
+      "extract_dir": "Aegisub",
+      "pre_install": [
+        "Expand-7zipArchive \"$dir\\Aegisub-9706-cibuilds-20caaabc0.exe\" \"$dir\\aegisub-installer.exe\""
+      ],
+      "installer": {
+        "file": "aegisub-installer.exe",
+        "args": [
+          "/S"
+        ]
+      },
+      "hash": "E9BC292A700FBAD6CE14C4B268D3E49B43344CC94DE5C3BFCCDA8AD616225C28"
+    }
+  },
+  "bin": [
+    "Aegisub.exe"
+  ],
+  "shortcuts": [
+    [
+      "Aegisub.exe",
+      "Aegisub"
+    ]
+  ]
+}
