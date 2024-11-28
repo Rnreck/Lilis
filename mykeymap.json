@@ -14,8 +14,8 @@
     },
     "pre_install": [
         "7z x \"$dir\\MyKeymap-2.0-beta32.7z\" -o\"$dir\" -y > $null 2>&1",
-        "Get-ChildItem \"$dir\\MyKeymap-2.0-beta31\\*\" -Recurse | ForEach-Object { Move-Item $_.FullName -Destination \"$dir\" -Force }",
-        "Remove-Item \"$dir\\MyKeymap-2.0-beta31\" -Recurse -Force",
+        "Get-ChildItem \"$dir\\MyKeymap-2.0-beta32\\*\" -Recurse | ForEach-Object { Move-Item $_.FullName -Destination \"$dir\" -Force }",
+        "Remove-Item \"$dir\\MyKeymap-2.0-beta32\" -Recurse -Force",
         "if (Test-Path \"$dir\\MyKeymap-2.0-beta32.7z\") { Remove-Item \"$dir\\MyKeymap-2.0-beta32.7z\" -Force }"
     ],
     "bin": "MyKeymap.exe",
